@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team — TSF</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { tsfBlue: '#1D4ED8' } } }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="flex items-center justify-between py-3">
+                <a href="./index.html" class="flex items-center gap-3">
+                    <img src="images/tsf_logo.jpeg"
+                        alt="TSF Logo" class="h-10 w-10 rounded-full object-cover ring-2 ring-tsfBlue/20" />
+                    <div class="leading-tight">
+                        <div class="font-semibold">TSF</div>
+                        <div class="text-xs text-slate-500">Trenchkid Support Foundation</div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <nav class="flex items-center gap-5 text-sm font-medium">
+                        <a class="hover:text-tsfBlue" href="./index.html">Home</a>
+                        <a class="hover:text-tsfBlue" href="./about.html">About</a>
+                        <a class="text-tsfBlue" href="./team.html">Team</a>
+                        <a class="hover:text-tsfBlue" href="./impact.html">Impact</a>
+                        <a class="hover:text-tsfBlue" href="./contact.html">Contact</a>
+                    </nav>
+
+                    <div class="hidden lg:block text-right">
+                        <div class="text-[11px] uppercase tracking-wide text-slate-500">Live</div>
+                        <div id="liveDateTime" class="text-sm font-semibold text-tsfBlue">--</div>
+                    </div>
+
+                    <a href="./donate.html"
+                        class="inline-flex items-center justify-center rounded-xl bg-tsfBlue px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-tsfBlue focus:ring-offset-2">
+                        Donate
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center gap-3">
+                    <a href="./donate.html"
+                        class="inline-flex items-center justify-center rounded-xl bg-tsfBlue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-tsfBlue focus:ring-offset-2">
+                        Donate
+                    </a>
+
+                    <button id="mobileMenuBtn" type="button"
+                        class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                        aria-controls="mobileMenu" aria-expanded="false">
+                        Menu
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="md:hidden hidden pb-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                    <div class="mb-3">
+                        <div class="text-[11px] uppercase tracking-wide text-slate-500">Live</div>
+                        <div id="liveDateTimeMobile" class="text-sm font-semibold text-tsfBlue">--</div>
+                    </div>
+
+                    <nav class="grid gap-2 text-sm font-medium">
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./index.html">Home</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./about.html">About</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50 text-tsfBlue" href="./team.html">Team</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./impact.html">Impact</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./contact.html">Contact</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./donate.html">Donate</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-10">
+        <div class="mb-8">
+            <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Meet the team</h1>
+            <p class="mt-2 max-w-3xl text-slate-700">
+                The people behind TSF’s programs, mentorship, and community partnerships.
+            </p>
+        </div>
+
+        <!-- Team grid (placeholders for now) -->
+        <section class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Card -->
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <img class="h-20 w-20 rounded-2xl object-cover"
+                    src="images/ken.jpg"
+                    alt="Team member" />
+                <h2 class="mt-4 text-lg font-bold">ADOSIBE KENNEDY AWINE</h2>
+                <p class="text-sm text-slate-600">Founder | Program Lead</p>
+                <p class="mt-3 text-sm text-slate-700">
+                    Web Developer | Programmer | Network Engineer. Founder and lead coordinator of TSF programs and mentorship.
+                </p>
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <img class="h-20 w-20 rounded-2xl object-cover"
+                    src="images/cle.jpeg"
+                    alt="Team member" />
+                <h2 class="mt-4 text-lg font-bold">CLEMENT ABONOPAYA</h2>
+                <p class="text-sm text-slate-600">Operations</p>
+                <p class="mt-3 text-sm text-slate-700">
+                    Web Developer | Programmer | Cyber Security Expert. TSF site monitor.
+                </p>
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <img class="h-20 w-20 rounded-2xl object-cover"
+                    src="images/rich.jpg"
+                    alt="Team member" />
+                <h2 class="mt-4 text-lg font-bold">RICHARD AGANFEKA ATASIGA</h2>
+                <p class="text-sm text-slate-600">Co-founder | Program Lead</p>
+                <p class="mt-3 text-sm text-slate-700">
+                    PETROLEUM ENGINEER. Coordinate and organise TSF plans .
+                </p>
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <img class="h-20 w-20 rounded-2xl object-cover"
+                    src="images/gideon.png"
+                    alt="Team member" />
+                <h2 class="mt-4 text-lg font-bold">AKANTOGE GIDEON</h2>
+                <p class="text-sm text-slate-600">Co-founder | Community Outreach</p>
+                <p class="mt-3 text-sm text-slate-700">
+                    CIVIL ENGINEER. Coordinate and organise TSF community outreach programs.
+                </p>
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <img class="h-20 w-20 rounded-2xl object-cover"
+                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?auto=format&fit=crop&w=300&q=80"
+                    alt="Team member" />
+                <h2 class="mt-4 text-lg font-bold">RICHMOND AYAMGBA</h2>
+                <p class="text-sm text-slate-600">Mentorship | Community Engagement</p>
+                <p class="mt-3 text-sm text-slate-700">
+                    PHARMACIST. Focus on mentorship and community engagement initiatives for healthcare.
+                </p>
+            </article>
+
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <img class="h-20 w-20 rounded-2xl object-cover"
+                    src="images/gen.jpeg"
+                    alt="Team member" />
+                <h2 class="mt-4 text-lg font-bold">GENEVIVE AYERIWUYA</h2>
+                <p class="text-sm text-slate-600">Programs | Healthcare</p>
+                <p class="mt-3 text-sm text-slate-700">
+                    NURSE. Engage in healthcare-related programs.
+                </p>
+            </article>
+        </section>
+
+        <!-- References section -->
+        <section class="mt-10 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-bold">References</h2>
+            <p class="mt-2 text-sm text-slate-700">
+                References (schools, communities, organizations, mentors).
+            </p>
+
+            <ul class="mt-4 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+                <li class="rounded-2xl bg-slate-50 p-4 border border-slate-200">Mirigu(All schools reach.)</li>
+                <li class="rounded-2xl bg-slate-50 p-4 border border-slate-200">Sirigu (4 Schools reched.)</li>
+                <li class="rounded-2xl bg-slate-50 p-4 border border-slate-200">Kandiga (7 schools reached.)</li>
+                <li class="rounded-2xl bg-slate-50 p-4 border border-slate-200">Partner1, Pepsodent Tooth paste</li>
+                <li class="rounded-2xl bg-slate-50 p-4 border border-slate-200">Partner2, World Health Organization.</li>
+                <li class="rounded-2xl bg-slate-50 p-4 border border-slate-200">Partner3, Camfed Ghana.</li>
+            </ul>
+        </section>
+
+        <!-- CTA -->
+        <section class="mt-10">
+            <div class="rounded-3xl bg-tsfBlue p-8 text-white shadow-lg">
+                <div class="grid gap-6 md:grid-cols-2 md:items-center">
+                    <div>
+                        <h2 class="text-2xl font-extrabold">Want to support TSF?</h2>
+                        <p class="mt-2 text-white/90">Donate today or send us a message to volunteer.</p>
+                    </div>
+                    <div class="md:text-right flex flex-col gap-3 sm:flex-row md:justify-end">
+                        <a href="./contact.html"
+                            class="inline-flex items-center justify-center rounded-2xl bg-white/10 px-6 py-3 text-base font-bold text-white ring-1 ring-white/25 hover:bg-white/15">
+                            Contact
+                        </a>
+                        <a href="./donate.html"
+                            class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-base font-bold text-tsfBlue hover:bg-slate-100">
+                            DONATE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto max-w-6xl px-4 py-10">
+            <div class="grid gap-8 md:grid-cols-3">
+                <div>
+                    <div class="font-bold">TSF</div>
+                    <p class="mt-2 text-sm text-slate-600">The hood is not the trenchkid destination.</p>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold">Contact</div>
+                    <p class="mt-2 text-sm text-slate-600">+1233558705146</p>
+                </div>
+                <div class="md:text-right">
+                    <div class="text-sm font-semibold">Donate</div>
+                    <p class="mt-2 text-sm text-slate-600">Support a child’s education and future.</p>
+                    <a href="./donate.html"
+                        class="mt-3 inline-flex rounded-xl bg-tsfBlue px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800">
+                        Donate
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="mt-10 flex flex-col gap-2 border-t border-slate-200 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+                <div>TSF copyrightreserved</div>
+                <div>© <span id="yearNow"></span></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

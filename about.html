@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — TSF</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { tsfBlue: '#1D4ED8' } } }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="flex items-center justify-between py-3">
+                <a href="./index.html" class="flex items-center gap-3">
+                    <img src="images/tsf_logo.jpeg"
+                        alt="TSF Logo" class="h-10 w-10 rounded-full object-cover ring-2 ring-tsfBlue/20" />
+                    <div class="leading-tight">
+                        <div class="font-semibold">TSF</div>
+                        <div class="text-xs text-slate-500">Trenchkid Support Foundation</div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <nav class="flex items-center gap-5 text-sm font-medium">
+                        <a class="hover:text-tsfBlue" href="./index.html">Home</a>
+                        <a class="text-tsfBlue" href="./about.html">About</a>
+                        <a class="hover:text-tsfBlue" href="./team.html">Team</a>
+                        <a class="hover:text-tsfBlue" href="./impact.html">Impact</a>
+                        <a class="hover:text-tsfBlue" href="./contact.html">Contact</a>
+                    </nav>
+
+                    <div class="hidden lg:block text-right">
+                        <div class="text-[11px] uppercase tracking-wide text-slate-500">Live</div>
+                        <div id="liveDateTime" class="text-sm font-semibold text-tsfBlue">--</div>
+                    </div>
+
+                    <a href="./donate.html"
+                        class="inline-flex items-center justify-center rounded-xl bg-tsfBlue px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-tsfBlue focus:ring-offset-2">
+                        Donate
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center gap-3">
+                    <a href="./donate.html"
+                        class="inline-flex items-center justify-center rounded-xl bg-tsfBlue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-tsfBlue focus:ring-offset-2">
+                        Donate
+                    </a>
+
+                    <button id="mobileMenuBtn" type="button"
+                        class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                        aria-controls="mobileMenu" aria-expanded="false">
+                        Menu
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="md:hidden hidden pb-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                    <div class="mb-3">
+                        <div class="text-[11px] uppercase tracking-wide text-slate-500">Live</div>
+                        <div id="liveDateTimeMobile" class="text-sm font-semibold text-tsfBlue">--</div>
+                    </div>
+
+                    <nav class="grid gap-2 text-sm font-medium">
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./index.html">Home</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50 text-tsfBlue" href="./about.html">About</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./team.html">Team</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./impact.html">Impact</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./contact.html">Contact</a>
+                        <a class="rounded-xl px-3 py-2 hover:bg-slate-50" href="./donate.html">Donate</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page hero -->
+        <section class="border-b border-slate-200 bg-white">
+            <div class="mx-auto max-w-6xl px-4 py-12">
+                <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+                    <div>
+                        <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">About TSF</h1>
+                        <p class="mt-3 text-slate-700">
+                            Trenchkid Support Foundation exists to empower underprivileged children with education,
+                            digital skills,
+                            and mentorship—enabling them to build independent and impactful futures.
+                        </p>
+
+                        <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+                            <a href="./donate.html"
+                                class="inline-flex items-center justify-center rounded-2xl bg-tsfBlue px-6 py-3 text-base font-bold text-white shadow hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-tsfBlue focus:ring-offset-2">
+                                DONATE
+                            </a>
+                            <a href="./impact.html"
+                                class="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-base font-semibold hover:bg-slate-50">
+                                See our impact
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+                        <img class="h-64 w-full rounded-2xl object-cover" alt="TSF outreach"
+                            src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1400&q=80" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission layers -->
+        <section class="mx-auto max-w-6xl px-4 py-12">
+            <h2 class="text-2xl font-bold tracking-tight">Core mission</h2>
+            <p class="mt-2 max-w-3xl text-slate-700">
+                TSF is built around empowerment: giving children opportunity, skills, and mentorship so they can build
+                strong futures.
+            </p>
+
+            <div class="mt-8 grid gap-4 md:grid-cols-2">
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <h3 class="font-bold">1) Break the cycle of poverty</h3>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Many children are talented but lack school fees, mentorship, exposure, and basic needs.
+                        TSF exists to provide opportunity—not just charity, but empowerment.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <h3 class="font-bold">2) Provide education & skill development</h3>
+                    <p class="mt-2 text-sm text-slate-700">
+                        We support schooling, teach digital skills, encourage entrepreneurship, and build confidence.
+                        Not just giving food—but giving future.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <h3 class="font-bold">3) Build responsible future leaders</h3>
+                    <p class="mt-2 text-sm text-slate-700">
+                        The aim isn’t just helping kids survive. It’s helping them become technicians, developers,
+                        business owners, leaders, and change-makers.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <h3 class="font-bold">4) Create a community that cares</h3>
+                    <p class="mt-2 text-sm text-slate-700">
+                        We mobilize volunteers, partner with schools and tech communities, and encourage youth
+                        mentorship.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="border-t border-slate-200 bg-white">
+            <div class="mx-auto max-w-6xl px-4 py-12">
+                <div class="flex items-end justify-between gap-6">
+                    <div>
+                        <h2 class="text-2xl font-bold tracking-tight">Photos from our work</h2>
+                        <p class="mt-2 text-slate-700">TSF has reached out to many children from numerous communities in Ghana.</p>
+                    </div>
+                    <a href="./donate.html"
+                        class="hidden sm:inline-flex rounded-xl bg-tsfBlue px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800">
+                        Donate
+                    </a>
+                </div>
+
+                <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <img class="h-48 w-full rounded-3xl object-cover" alt="TSF photo"
+                        src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1200&q=80" />
+                    <img class="h-48 w-full rounded-3xl object-cover" alt="TSF photo"
+                        src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1200&q=80" />
+                    <img class="h-48 w-full rounded-3xl object-cover" alt="TSF photo"
+                        src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80" />
+                    <img class="h-48 w-full rounded-3xl object-cover" alt="TSF photo"
+                        src="https://images.unsplash.com/photo-1520975682031-a9ceaa646c05?auto=format&fit=crop&w=1200&q=80" />
+                    <img class="h-48 w-full rounded-3xl object-cover" alt="TSF photo"
+                        src="https://images.unsplash.com/photo-1544717305-996b815c338c?auto=format&fit=crop&w=1200&q=80" />
+                    <img class="h-48 w-full rounded-3xl object-cover" alt="TSF photo"
+                        src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80" />
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="mx-auto max-w-6xl px-4 py-12">
+            <div class="rounded-3xl bg-tsfBlue p-8 text-white shadow-lg">
+                <div class="grid gap-6 md:grid-cols-2 md:items-center">
+                    <div>
+                        <h2 class="text-2xl font-extrabold">Support a child’s future today</h2>
+                        <p class="mt-2 text-white/90">
+                            Your donation helps fund education, health support, and mentorship programs.
+                        </p>
+                    </div>
+                    <div class="md:text-right">
+                        <a href="./donate.html"
+                            class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-base font-bold text-tsfBlue hover:bg-slate-100">
+                            DONATE NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto max-w-6xl px-4 py-10">
+            <div class="grid gap-8 md:grid-cols-3">
+                <div>
+                    <div class="font-bold">TSF</div>
+                    <p class="mt-2 text-sm text-slate-600">The hood is not the trenchkid destination.</p>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold">Contact</div>
+                    <p class="mt-2 text-sm text-slate-600">+1233558705146</p>
+                </div>
+                <div class="md:text-right">
+                    <div class="text-sm font-semibold">Donate</div>
+                    <p class="mt-2 text-sm text-slate-600">Support a child’s education and future.</p>
+                    <a href="./donate.html"
+                        class="mt-3 inline-flex rounded-xl bg-tsfBlue px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800">
+                        Donate
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="mt-10 flex flex-col gap-2 border-t border-slate-200 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+                <div>TSF copyright-reserved</div>
+                <div>© <span id="yearNow"></span></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
